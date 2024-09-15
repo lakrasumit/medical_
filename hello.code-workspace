@@ -1,0 +1,58 @@
+{
+	"folders": [
+		{
+			"path": "."
+		},
+		{
+			"path": "../credit card"
+		},
+		{
+			"path": "../New folder"
+		},
+		{
+			"path": "../final"
+		},
+		{
+			"path": "../event"
+		},
+		{
+			"path": "../SQL"
+		},
+		{
+			"path": "../html.html"
+		},
+		{
+			"path": "../react"
+		},
+		{
+			"path": "../C Programming"
+		},
+		{
+			"path": "../ddd"
+		},
+		{
+			"path": "../nodejs"
+		},
+		{
+			"path": "../CHAT"
+		},
+		{
+			"path": "../Programming"
+		},
+		{
+			"path": "../Restarunt Website"
+		},
+		{
+			"path": "../c++ program"
+		},
+		{
+			"path": "../project"
+		},
+		{
+			"path": "../internship"
+		}
+	],
+	"settings": {
+		"liveServer.settings.multiRootWorkspaceName": "hello"
+	}
+}
