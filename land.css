@@ -45,6 +45,29 @@
 html{
     font-size: 14px;
 }
+.hero {
+    border: 3px solid black;
+    font-size: 20px;
+    text-align: center;
+    padding: 50px;
+    background-color: #a8abae57;
+    width: 100%;
+}
+.hero {
+    border: 3px solid black;
+    font-size: 20px;
+    text-align: center;
+    padding: 50px;
+    background-color: #a8abae57;
+    width: 100%;
+    
+    
+  }
+  .hero input, .hero button {
+    padding: 15px;
+    margin: 10px;
+    width: 350px;
+  }
 
 body{
     width: 100vw;
@@ -121,6 +144,7 @@ b{
     gap: 1.8rem;
     grid-template-columns: 12rem auto 23rem;
 }
+
 
 aside{
     height: 100vh;
