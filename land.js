@@ -32,3 +32,37 @@ Orders.forEach(order => {
     tr.innerHTML = trContent;
     document.querySelector('table tbody').appendChild(tr);
 });
+// Handle message sending
+function sendMessage() {
+    let input = document.getElementById("user-input").value;
+    if(input.trim() !== "") {
+        displayMessage(input, "user");
+        document.getElementById("user-input").value = ""; // Clear the input field
+        
+        // Send message to the backend
+        fetch('/chatbot', {
+            method: 'POST',
+            headers: {
+                'Content-Type': 'application/json'
+            },
+            body: JSON.stringify({ message: input })
+        })
+        .then(response => response.json())
+        .then(data => {
+            displayMessage(data.reply, "bot"); // Display bot's reply
+        })
+        .catch(error => console.log(error));
+    }
+}
+
+// Display messages
+function displayMessage(message, sender) {
+    let messages = document.getElementById("messages");
+    let messageElement = document.createElement("div");
+    messageElement.textContent = `${sender === "user" ? "You" : "Bot"}: ${message}`;
+    messageElement.className = sender;
+    messages.appendChild(messageElement);
+    messages.scrollTop = messages.scrollHeight;
+}
+
+
